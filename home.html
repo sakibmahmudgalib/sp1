@@ -1,0 +1,683 @@
+<html>
+
+<head>
+  <title>SP1 Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: ;
+
+    }
+
+
+    ul {
+      list-style-type: none;
+    }
+
+
+
+    a:hover {
+      text-decoration: none;
+      background-color: #4f4a4a;
+      color: white;
+    }
+
+
+    div.normal {
+      margin: 10px;
+	  padding-left:30px;
+	  padding-right:30px;
+      float: left;
+      width: 160px;
+
+
+    }
+
+    div.gallery {
+      margin: 10px;
+      border: 1px solid #575757;
+      float: left;
+      width: 239px;
+
+
+
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+	
+      width: 100%;
+      height: 270;
+	  
+    }
+
+    div.desc {
+
+      padding: 15px;
+      text-align: center;
+    }
+
+    .a {
+      background-color: #3b3b3b;
+      border-radius: px;
+      padding: 6px 10px;
+      color: white;
+	  margin-left:70px;
+	  margin-bottom:30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .a:hover {
+      background-color: #000000;
+    }
+
+    .c {
+      background-color: ;
+    }
+
+    .c:hover {
+      background-color: black;
+    }
+
+    .c:active {
+      background-color: green;
+    }
+
+    .a:active {
+      background-color: #2df50a;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .one {
+      color: green;
+      padding: 20px;
+    }
+
+    .two {
+      color: ;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .three:hover {
+      text-decoration: none;
+      background-color: #4f4a4a;
+      color: white;
+    }
+
+    .search {
+      color: ;
+      background-color: ;
+
+      padding: 6px 8px;
+
+      margin-right: px;
+      background: #ededed;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+
+    }
+
+    #text {
+      background-color: #d8d8d8;
+      border-color: #039fad;
+      font-size: 15px;
+      border: 0px solid #4CAF50;
+
+    }
+
+    .search:hover {
+      color: white;
+      background-color: black;
+
+    }
+
+    div.space {
+      word-spacing: 18px;
+      padding: 4px;
+      font-size: 20px;
+      background-color: #d8d8d8;
+    }
+
+
+    div.sticky1 {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 2px;
+      background-color: #039fad;
+      text-align: center;
+      border: 0px solid #4CAF50;
+
+    }
+
+    .content {
+      padding: 10px;
+      background-color: ;
+    }
+
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 10px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 2px 5px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      color: #ea7704;
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<?php include("homeheader.php");?>
+
+  <table border="0" width="100%">
+    <tr>
+      <td class="one">
+        <a href="home.html">
+          <font size="5">Brand Logo</font>
+        </a>
+      </td>
+      <td><b><input id="text" type="text" size="80" placeholder="Search..." style="padding:6px"/><a class="search" href="" style="word-spacing:0px" title="Search">  <i style="color:;padding:0px" class="fa fa-search" title="Search"><b>Search</b></i>
+        </a>
+        </b>
+      </td>
+
+      <td class="two">
+        <a href="login.html">
+          <font size="4">Login</font>
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="">
+          <font size="4">Register</font>
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="">
+          <font size="4">Contact us</font>
+        </a>
+      </td>
+
+
+    </tr>
+
+  </table>
+
+
+  <div class="sticky1">
+    <div class="space">
+      <div class="dropdown">
+
+        <b> <a  class="three" class="dropbtn" href=""style="color:;word-spacing:0px" >MOBILE & TABLET</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+
+        <b> <a  class="three" class="dropbtn" href=""style="color:">COMPUTER</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <b> <a  class="three" class="dropbtn" href=""style="color:;word-spacing:0px">ELECTRONICS</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <b> <a  class="three" class="dropbtn" href=""style="color:">ENTERTAINMENT</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <b><a  class="three" class="dropbtn" href=""style="color:">DAILYNEEDS</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+
+        <b> <a  class="three" class="dropbtn" href=""style="color:;word-spacing:0px">FASHION & BEAUTY</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <b> <a  class="three" class="dropbtn" href=""style="color:">MORE</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <!--div class="dropdown">
+        <b> <a  class="three" class="dropbtn" href=""style="color:;word-spacing:0px"> Read Later</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <b><a  class="three" class="dropbtn" href=""style="color:"> Favourates</a></b>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <!--b><input type="text" size="31" placeholder="Search..." style="padding:4px"/><a class="search" href="" style="word-spacing:0px">  <!--button  style="width:45px;padding:2px" title="search"-->
+      <!--i style="color:;padding:0px" class="fa fa-search"></i><!--/button-->
+      </a>
+      </b-->
+
+
+    </div>
+
+  </div>
+
+
+  <table class="content" border="0" width="100%">
+
+    <tr>
+
+      <td colspan="2" bgcolor="#029379">
+        <center style="color:white;padding:0px">
+          <font size="5"> Hot Offer</font>
+        </center>
+      </td>
+      <tr>
+        <td bgcolor="#eee" align="left" height="" valign="top">
+          <!--   ADD YOUR CODE HERE...<font size="6"><?php echo $currentUser['name']; ?></font-->
+
+          <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+		  
+          <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+          <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+          <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+
+          <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+		<tr>
+			  <td colspan="2" bgcolor="#029379">
+              <center style="color:white;padding:0px">
+                <font size="5">Makeup</font>
+              </center>
+            </td>
+			<tr>
+				<td>
+					</div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+          <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="f.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            
+          </div>
+          
+            <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="f.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            
+          </div>
+		  <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="f.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            
+          </div>
+		  <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="f.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            
+          </div>
+		  <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="f.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            
+          </div>
+			
+			</td>
+			
+			</tr>
+		</tr>
+            
+          <tr>
+
+            <td colspan="2" bgcolor="#029379">
+              <center style="color:white;padding:0px">
+                <font size="5">Electronics</font>
+              </center>
+            </td>
+            <tr>
+              <td bgcolor="#eee" align="left" height="" valign="top">
+                <!--   ADD YOUR CODE HERE...<font size="6"><?php echo $currentUser['name']; ?></font-->
+
+                <div class="normal">
+                  <div class="gallery">
+                    <a target="_blank" href="orderhistory.php">
+                      <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                      <div class="desc">
+                          <b>Product Name </b><br/><br/>
+                          <b>Price : $100</b>
+
+                      </div>
+
+                  </a>
+                    <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+                    </div>
+
+                  </div>
+                  <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+                </div>
+				<div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+		  <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+		  <div class="normal">
+            <div class="gallery">
+              <a target="_blank" href="orderhistory.php">
+                <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                <div class="desc">
+                    <b>Product Name </b><br/><br/>
+                    <b>Price : $100</b>
+
+                </div>
+
+            </a>
+              <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+              </div>
+
+            </div>
+            <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+          </div>
+                <div class="normal">
+                  <div class="gallery">
+                    <a target="_blank" href="orderhistory.php">
+                      <img src="e.jpg" alt="Trolltunga Norway" width="600" height="400">
+
+                      <div class="desc">
+                          <b>Product Name </b><br/><br/>
+                          <b>Price : $100</b>
+
+                      </div>
+
+                  </a>
+                    <div class="card"> <a class="a" href="card.php"> Add to card </a> </b>
+                    </div>
+
+                  </div>
+                  <!--div class="card"> <a class="a" href="card.php"> Add to card </a> </b></div-->
+                </div>
+            </tr>
+            </td>
+
+          </tr>
+
+
+
+      </tr>
+
+
+
+  </table>
+
+
+
+
+
+  <table width="100%">
+    <tr>
+      <td colspan="2" bgcolor="steelblue">
+        <center style="color:white">
+          Copyright © 2018
+        </center>
+      </td>
+
+    </tr>
+
+  </table>
+
+
+</body>
+
+
+</html>
